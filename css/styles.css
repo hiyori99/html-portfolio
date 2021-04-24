@@ -24,13 +24,14 @@ body{
   flex-wrap: wrap;
   margin-bottom: 30px;
   margin-top: 30px;
+  flex-wrap: nowrap;
 }
 
 a{
   text-decoration: none;
   color: #fff;
   text-align: center;
-  font-size: 40px;;
+  font-size: 35px;;
   align-self: flex-start;
   flex-basis: auto;
   flex-grow: 1;
@@ -119,10 +120,14 @@ h1{
 
 .self{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .self img{
   margin: 30px;
+  width: 30%;
+  height: 30%;
 }
 
 .sentence{
