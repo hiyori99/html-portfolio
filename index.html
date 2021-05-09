@@ -1,38 +1,55 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="tuf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>HIYORIのポートフォリオサイト</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HIYORI's Portfolio Site</title>
   <link rel="icon" href="https://github.com/hiyori99/html-portfolio/blob/main/img/Apple.png?raw=true">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300 rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header>
-    <div class="container">
-      <div class="top">
-        <div class="name">
-          <img src="https://github.com/hiyori99/html-portfolio/blob/main/img/Apple.png?raw=true" alt="りんごの画像です">
-          <h1>HIYORI Portfolio Site</h1>
-        </div>
-        <div class="box1"></div>
-        <div class="menu">
-          <!-- <div class="home">home</div> -->
-          <a href="#about">about</a>
-          <a href="#skills">skills</a>
-          <a href="#contact">contact</a>
-        </div>
-        <div class="box1"></div>
-      </div>
-      <img src="https://github.com/hiyori99/html-portfolio/blob/main/img/bin.png?raw=true" alt="ビンの画像です">
-    </div>  
+    <div class="logo">
+      <img src="https://github.com/hiyori99/html-portfolio/blob/main/img/Apple.png?raw=true" alt="りんごの画像です">
+    </div>
+
+    <div class="sp-menu">
+      <span class="material-icons" id="open">menu</span>
+    </div>
   </header>
+
+  <div class="overlay">
+    <span class="material-icons" id="close">close</span>
+    <nav>
+      <ul>
+        <li><a href="#home" id="menu1">home</a></li>
+        <li><a href="#about" id="menu2">about</a></li>
+        <li><a href="#skills" id="menu3">skills</a></li>
+        <li><a href="#product" id="menu4">product</a></li>
+        <li><a href="#contact" id="menu5">contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
   <main>
+    <div class="fade-in-bottom">
+      <img src="https://github.com/hiyori99/html-portfolio/blob/main/img/bin.png?raw=true" alt="ビンの画像です" hspace=”0″ id="home">
+      <p>HIYORI's Portfolio Site</p>    
+    </div>
+
     <div class="about-m">
       <a id="about">about</a>
     </div>
     <div class="self">
-      <img src="https://github.com/hiyori99/html-portfolio/blob/main/img/hiyori.jpeg?raw=true" width="500px" height="500px" alt="hiyoriの画像です">
+      <div class="self-div">
+        <!-- <div class="self-img"> -->
+          <img src="https://github.com/hiyori99/html-portfolio/blob/main/img/hiyori.jpeg?raw=true" width="500px" height="500px" alt="hiyoriの画像です" class="self-img">
+        <!-- </div> -->
+        <!-- <div class="self-in"></div> -->
+      </div>
       <div class="sentence">
         <h1>HIYORI IKEDA</h1>
         <p>弘前大学　理工学部　電子情報工学科　3年</p>
@@ -48,17 +65,84 @@
       <img class="css" src="https://raw.githubusercontent.com/hiyori99/html-portfolio/f5267f6a634e502ab936bd2056722b78691e8cfd/img/css-3.svg" alt="html">
       <img class="js" src="https://raw.githubusercontent.com/hiyori99/html-portfolio/f5267f6a634e502ab936bd2056722b78691e8cfd/img/javascript.svg" alt="html">
       <img class="python" src="https://raw.githubusercontent.com/hiyori99/html-portfolio/f5267f6a634e502ab936bd2056722b78691e8cfd/img/python.svg" alt="html">
+      <div class="mess">
+        <p>大学の課題では2年間C言語を使用していました。独学でHTML、CSS、JavaScript、Pythonを勉強しています。</p>
+      </div>
     </div>
-    <div class="mess">
-      <p>大学の課題では2年間C言語を使用していました。</p>
+    <div class="product-m">
+      <a id="product">product</a>
+    </div>
+    <div class="product-p1">
+      <p>私が今まで取り組んだものを紹介します。随時更新し、増やしていく予定です。</p>
+
+      <section id="modal1" class="hidden1">
+        <p>こちらはPythonで制作したチャットボットです。テレグラムというチャットアプリを利用しました。OpenweatherからAPIを叩き、入力した都市の気象情報を返すチャットボットです。英語入力と日本語入力に対応させました。</p>
+        <img src="file:///Users/hiyori/Desktop/renewal/img/bot_demo.png">
+        <div id="close1">
+          閉じる
+        </div>
+      </section>
+
+      <section id="modal2" class="hidden2">
+        <p>ハッカソンで制作した作品です。テーマは北海道でした。初めてUnityに触れて取り組み、ミニゲームを担当しました。2週間という短い間での開発でしたが、とても楽しかったです。チームのリーダーがUnity経験豊富だったのでたくさん教えてもらいました。そのうちまたゲーム制作に取り組みたいと思っています。
+        </p>
+        <p>↓デモ動画です。↓</p>
+        <video src="IMG_0032.mp4" controls></video>
+        <video src="IMG_0034.mp4" controls></video>
+        <div id="close2">
+          閉じる
+        </div>
+      </section>
+
+      <section id="modal3" class="hidden3">
+        <p>このサイトにお越しいただきありがとうございます。html、css、JavaScriptで実装しました。サーバーの勉強はまだしていないので、送信フォームはGoogle Formを利用して作成しました。どんなコメントでもお待ちしております。また、このサイトで使用している画像は著作権フリーのサイトからお借りしています。</p>
+        <p>↓おまけ↓</p>
+        <p>実家で飼っているチワワです。かわいいので載せました。</p>
+        <img src="file:///Users/hiyori/Desktop/renewal/img/ruru.jpeg">
+        <div id="close3">
+          閉じる
+        </div>
+      </section>
+
+      <div class="pro-p">
+        <p>・チャットボット</p>
+        <div id="product-open1">
+          詳細を見る >
+        </div>
+        <p>・ゲーム</p>
+        <div id="product-open2">
+          詳細を見る >
+        </div>
+        <p>・ポートフォリオサイト</p>
+        <div id="product-open3">
+          詳細を見る >
+        </div>
+      </div>
+      <div id="mask1" class="hidden1"></div>
+      <div id="mask2" class="hidden2"></div>
+      <div id="mask3" class="hidden3"></div>
+
+      
     </div>
     <div class="contact-m">
       <a id="contact">contact</a>
     </div>
     <div class="mail">
-      <p>gmail:いつか</p>
-      <p>Github:いつか</p>
+      <section id="contact-modal" class="hidden">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdfUKr4ValStms6E361nGTM3DEoXjb4aqDBEkAPULsMzvF4AQ/viewform?embedded=true" width="100%" height="80%" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+        <div id="contact-close">
+          閉じる
+        </div>
+      </section>
+      <div id="contact-open">
+        コメントを送信 >
+      </div>
+      <div id="contact-mask" class="hidden"></div>
+      <p>Github: hiyori99</p>
     </div>
+    
   </main>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
