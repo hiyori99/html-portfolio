@@ -428,8 +428,9 @@ h1{
   transform: translate(0, -1000px);
 }
 
-.hidden1 imf{
+.hidden1 img,.hidden3 img{
   width: 100%;
   height: auto;
+  object-fit: cover; 
 }
 
