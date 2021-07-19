@@ -1,148 +1,199 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HIYORI's Portfolio Site</title>
-  <link rel="icon" href="https://github.com/hiyori99/html-portfolio/blob/main/img/Apple.png?raw=true">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300 rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <img src="https://github.com/hiyori99/html-portfolio/blob/main/img/Apple.png?raw=true" alt="りんごの画像です">
-    </div>
+  <head>
+    <meta charset="utf-8">
+    <title>My Work - Portfolio</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-    <div class="sp-menu">
-      <span class="material-icons" id="open">menu</span>
-    </div>
-  </header>
+  <body>
+    <header id="header">
+      <h1 class="site-title">
+        <!-- <a href="index.html">
+          <img src="img/logo.svg" alt="My Work">
+        </a> -->
+        <p>My Site</p>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img class="icon" src="./img/icon-instagram.png" alt="インスタグラム">
+            </a>
+          </li> -->
+        </ul>
+      </nav>
+    </header>
 
-  <div class="overlay">
-    <span class="material-icons" id="close">close</span>
-    <nav>
-      <ul>
-        <li><a href="#home" id="menu1">home</a></li>
-        <li><a href="#about" id="menu2">about</a></li>
-        <li><a href="#skills" id="menu3">skills</a></li>
-        <li><a href="#product" id="menu4">product</a></li>
-        <li><a href="#contact" id="menu5">contact</a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <main>
-    <div class="fade-in-bottom">
-      <img src="https://github.com/hiyori99/html-portfolio/blob/main/img/bin.png?raw=true" alt="ビンの画像です" hspace=”0″ id="home">
-      <p>HIYORI's Portfolio Site</p>    
-    </div>
-
-    <div class="about-m">
-      <a id="about">about</a>
-    </div>
-    <div class="self">
-      <div class="self-div">
-        <!-- <div class="self-img"> -->
-          <img src="https://github.com/hiyori99/html-portfolio/blob/main/img/hiyori.jpeg?raw=true" width="500px" height="500px" alt="hiyoriの画像です" class="self-img">
-        <!-- </div> -->
-        <!-- <div class="self-in"></div> -->
+    <main>
+      <div id="mainvisual">
+        <picture>
+          <source media="(max-width: 600px)" srcset="img/mainvisual-sp.jpg">
+          <img src="img/mac.jpeg" alt="homeing">
+        </picture>
       </div>
-      <div class="sentence">
-        <h1>HIYORI IKEDA</h1>
-        <p>弘前大学　理工学部　電子情報工学科　3年</p>
-        <p>大学の授業がきっかけでプログラミングに興味を持ち独学しています。</p>
-        <p>趣味はK-POPの音楽を聞くことです。</p>        
-      </div>
-    </div>
-    <div class="skills-m">
-      <a id="skills">skills</a>
-    </div>
-    <div class="icon">
-      <img class="html" src="https://raw.githubusercontent.com/hiyori99/html-portfolio/f5267f6a634e502ab936bd2056722b78691e8cfd/img/html-5.svg" alt="html">
-      <img class="css" src="https://raw.githubusercontent.com/hiyori99/html-portfolio/f5267f6a634e502ab936bd2056722b78691e8cfd/img/css-3.svg" alt="html">
-      <img class="js" src="https://raw.githubusercontent.com/hiyori99/html-portfolio/f5267f6a634e502ab936bd2056722b78691e8cfd/img/javascript.svg" alt="html">
-      <img class="python" src="https://raw.githubusercontent.com/hiyori99/html-portfolio/f5267f6a634e502ab936bd2056722b78691e8cfd/img/python.svg" alt="html">
-      <div class="mess">
-        <p>大学の課題では2年間C言語を使用していました。独学でHTML、CSS、JavaScript、Pythonを勉強しています。</p>
-      </div>
-    </div>
-    <div class="product-m">
-      <a id="product">product</a>
-    </div>
-    <div class="product-p1">
-      <p>私が今まで取り組んだものを紹介します。随時更新し、増やしていく予定です。</p>
 
-      <section id="modal1" class="hidden1">
-        <p>こちらはPythonで制作したチャットボットです。テレグラムというチャットアプリを利用しました。OpenweatherからAPIを叩き、入力した都市の気象情報を返すチャットボットです。英語入力と日本語入力に対応させました。</p>
-        <img src="https://github.com/hiyori99/html-portfolio/blob/main/img/bot_demo.png?raw=true">
-        <div id="close1">
-          閉じる
-        </div>
-      </section>
-
-      <section id="modal2" class="hidden2">
-        <p>ハッカソンで制作した作品です。テーマは北海道でした。初めてUnityに触れて取り組み、ミニゲームを担当しました。2週間という短い間での開発でしたが、とても楽しかったです。チームのリーダーがUnity経験豊富だったのでたくさん教えてもらいました。そのうちまたゲーム制作に取り組みたいと思っています。
+      <section id="about" class="wrapper">
+        <h2 class="sec-title">About</h2>
+        <ul>
+          <li>HIYORI IKEDA</li>
+          <li>弘前大学　理工学部　電子情報工学科　３年</li>
+          <!-- <li>tel: 000-0000-0000</li> -->
+          <li>GitHub: hiyori99</li>
+          <li>mail: 99hiyorin@gmail.com</li>
+        </ul>
+        <p>プロフィール</p>
+        <p>
+          初めまして。このサイトまでお越しいただき、ありがとうございます。将来はエンジニアとして働きたく、大学の授業に加え、プログラミングスクールに通いながらプログラミングを勉強しています。また、他大学のIT研究会に所属し、ハッカソンへの参加経験もあります。よろしくお願いいたします。
         </p>
-        <p>↓デモ動画です。↓</p>
-        <video src="IMG_0032.mp4" controls></video>
-        <video src="IMG_0034.mp4" controls></video>
-        <div id="close2">
-          閉じる
-        </div>
       </section>
 
-      <section id="modal3" class="hidden3">
-        <p>このサイトにお越しいただきありがとうございます。html、css、JavaScriptで実装しました。サーバーの勉強はまだしていないので、送信フォームはGoogle Formを利用して作成しました。どんなコメントでもお待ちしております。また、このサイトで使用している画像は著作権フリーのサイトからお借りしています。</p>
-        <p>↓おまけ↓</p>
-        <p>実家で飼っているチワワです。かわいいので載せました。</p>
-        <img src="https://github.com/hiyori99/html-portfolio/blob/main/img/ruru.jpeg?raw=true">
-        <div id="close3">
-          閉じる
-        </div>
+      <section id="works" class="wrapper">
+        <h2 class="sec-title">Works</h2>
+        <ul>
+          <li>
+            <div class="macup">
+              <div class="window">
+                <div class="titlebar">
+                  <div class="buttons">
+                    <div class="close"></div>
+                    <div class="hide"></div>
+                    <div class="full"></div>
+                  </div>
+                  <p class="windowtitle">work1</p>
+                </div>
+                <div class="mess">
+                  <p>RPGゲーム</p>
+                </div>
+              </div>
+          </li>
+          <li>
+            <div class="macup">
+              <div class="window">
+                <div class="titlebar">
+                  <div class="buttons">
+                    <div class="close"></div>
+                    <div class="hide"></div>
+                    <div class="full"></div>
+                  </div>
+                  <p class="windowtitle">work2</p>
+                </div>
+                <div class="mess">
+                  <p>Pythonでチャットボット</p>
+                </div>
+              </div>
+          </li>
+          <li>
+            <div class="macup">
+              <div class="window">
+                <div class="titlebar">
+                  <div class="buttons">
+                    <div class="close"></div>
+                    <div class="hide"></div>
+                    <div class="full"></div>
+                  </div>
+                  <p class="windowtitle">work3</p>
+                </div>
+                <div class="mess">
+                  <p>Flaskでwebアプリ</p>
+                </div>
+              </div>
+          </li>
+          <li>
+            <div class="macup">
+              <div class="window">
+                <div class="titlebar">
+                  <div class="buttons">
+                    <div class="close"></div>
+                    <div class="hide"></div>
+                    <div class="full"></div>
+                  </div>
+                  <p class="windowtitle">work4</p>
+                </div>
+                <div class="mess">
+                  <p>coming soon</p>
+                </div>
+              </div>
+          </li>
+          <li>
+            <div class="macup">
+              <div class="window">
+                <div class="titlebar">
+                  <div class="buttons">
+                    <div class="close"></div>
+                    <div class="hide"></div>
+                    <div class="full"></div>
+                  </div>
+                  <p class="windowtitle">work5</p>
+                </div>
+                <div class="mess">
+                  <p>coming soon</p>
+                </div>
+              </div>
+          </li>
+          <li>
+            <div class="macup">
+              <div class="window">
+                <div class="titlebar">
+                  <div class="buttons">
+                    <div class="close"></div>
+                    <div class="hide"></div>
+                    <div class="full"></div>
+                  </div>
+                  <p class="windowtitle">work6</p>
+                </div>
+                <div class="mess">
+                  <p>coming soon</p>
+                </div>
+              </div>
+          </li>
+        </ul>
       </section>
 
-      <div class="pro-p">
-        <p>・チャットボット</p>
-        <div id="product-open1">
-          詳細を見る >
-        </div>
-        <p>・ゲーム</p>
-        <div id="product-open2">
-          詳細を見る >
-        </div>
-        <p>・ポートフォリオサイト</p>
-        <div id="product-open3">
-          詳細を見る >
-        </div>
-      </div>
-      <div id="mask1" class="hidden1"></div>
-      <div id="mask2" class="hidden2"></div>
-      <div id="mask3" class="hidden3"></div>
-
-      
-    </div>
-    <div class="contact-m">
-      <a id="contact">contact</a>
-    </div>
-    <div class="mail">
-      <section id="contact-modal" class="hidden">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdfUKr4ValStms6E361nGTM3DEoXjb4aqDBEkAPULsMzvF4AQ/viewform?embedded=true" width="100%" height="80%" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
-        <div id="contact-close">
-          閉じる
-        </div>
+      <section id="news" class="wrapper">
+        <h2 class="sec-title">News</h2>
+        <dl>
+          <!-- <dt>2020.XX.XX</dt>
+          <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd> -->
+          <dt>2021.07</dt>
+          <dd>HUIT×ビズリーチ合同LT会　登壇</dd>
+          <dt>2021.05</dt>
+          <dd>CS50(ハーバード大学:コンピュータサイエンス)　履修開始</dd>
+          <dt>2021.03</dt>
+          <dd>HUITハッカソン2021　参加</dd>
+          <dt>2019.04</dt>
+          <dd>弘前大学　理工学部　電子情報工学科　入学</dd>
+        </dl>
       </section>
-      <div id="contact-open">
-        コメントを送信 >
-      </div>
-      <div id="contact-mask" class="hidden"></div>
-      <p>Github: hiyori99</p>
-    </div>
-    
-  </main>
 
-  <script src="js/main.js"></script>
-</body>
+      <section id="contact" class="wrapper">
+        <h2 class="sec-title">Contact</h2>
+        <form action="#" method="post">
+          <dl>
+            <dt><label for="name">NAME</label></dt>
+            <dd><input type="text" id="name" name="your-name"></dd>
+            <dt><label for="email">E-mail</label></dt>
+            <dd><input type="email" id="email" name="your-email"></dd>
+            <dt><label for="message">MESSAGE</label></dt>
+            <dd><textarea id="message" name="your-message"></textarea></dd>
+          </dl>
+          <div class="button"><input type="submit" value="送信"></div>
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <p>&copy; 2020 My Work</p>
+    </footer>
+
+  </body>
+
 </html>
