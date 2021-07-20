@@ -89,6 +89,15 @@ About
 #about p {
   text-align:justify;
 }
+#about img {
+  border-radius: 50%;
+  width: 30%;
+  height: 30%;
+}
+.self {
+  text-align: center;
+  margin: auto;
+}
 
 /*-------------------------------------------
 Works
