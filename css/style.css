@@ -70,14 +70,18 @@ Mainvisual
 #mainvisual {
   margin-bottom: 80px;
 }
-#mainvisual img {
+/* #mainvisual img {
   width: 100%;
   max-width: 1920px;
   height: 420px;
   object-fit: cover;
-}
+} */
 .pc { 
   display: block !important; 
+  width: 100%;
+  max-width: 1920px;
+  height: 420px;
+  object-fit: cover;
 }
 .sp { 
   display: none !important; 
@@ -289,12 +293,12 @@ SP
   /*-------------------------------------------
   mainvisual
   -------------------------------------------*/
-  #mainvisual img {
+  /* #mainvisual img {
     width: 100%;
-    /* max-width: 1920px; */
     height: 100%;
-    /* object-fit: cover; */
-  }
+    max-width: 100%;
+    object-fit: cover;
+  } */
   .pc { 
     display: none !important; 
   }
