@@ -70,22 +70,22 @@ Mainvisual
 #mainvisual {
   margin-bottom: 80px;
 }
-/* #mainvisual img {
+#mainvisual img {
   width: 100%;
   max-width: 1920px;
   height: 420px;
   object-fit: cover;
-} */
-.pc { 
+}
+/* .pc { 
   display: block !important; 
   width: 100%;
   max-width: 1920px;
   height: 420px;
   object-fit: cover;
-}
-.sp { 
+} */
+/* .sp { 
   display: none !important; 
-}
+} */
 
 /*-------------------------------------------
 About
@@ -296,15 +296,14 @@ SP
   /* #mainvisual img {
     width: 100%;
     height: 100%;
-    max-width: 100%;
     object-fit: cover;
   } */
-  .pc { 
+  /* .pc { 
     display: none !important; 
-  }
-  .sp { 
+  } */
+  /* .sp { 
     display: block !important; 
-  }
+  } */
 
   /*-------------------------------------------
   Works
