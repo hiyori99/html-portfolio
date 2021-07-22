@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 html {
-  font-size: 100%;
+  font-size: 110%;
 }
 body {
   color: #24292e;
@@ -281,10 +281,12 @@ SP
     max-width: 100%;
     height: auto;
     flex-direction: column;
+    margin-top: 5%;
   }
   #header li {
     font-size: 0.8rem;
     margin-left: 20px;
+    margin-top: 10%;
   }
   #header li:first-child {
     margin-left: 0;
