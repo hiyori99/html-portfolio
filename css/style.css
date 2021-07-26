@@ -119,6 +119,10 @@ About
 /*-------------------------------------------
 Works
 -------------------------------------------*/
+.macup:hover {
+  opacity: 0.7;
+  color: white;
+}
 #works ul {
   display: flex;
   justify-content: space-between;
@@ -158,6 +162,7 @@ p.windowtitle{
   font-size: 12px;
   text-align: center;
   cursor: default;
+  color: #24292e;
 }
 .buttons{
   width: 55px;
@@ -191,6 +196,7 @@ p.windowtitle{
 }
 .mess p{
   margin-top: 20%;
+  color: #24292e;
 }
 /*-------------------------------------------
 News
