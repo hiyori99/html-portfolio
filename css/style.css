@@ -6,6 +6,10 @@ html {
 }
 body {
   color: #24292e;
+  /* position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0; */
 }
 a {
   text-decoration: none;
@@ -200,15 +204,7 @@ p.windowtitle{
 }
 
 /* モーダルウィンドウ */
-/* #open {
-  cursor: pointer;
-  width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  text-align: center;
-  padding: 12px 0;
-  margin: 16px auto 0;
-} */
+
 #close {
   cursor: pointer;
   width: 200px;
@@ -232,6 +228,7 @@ p.windowtitle{
 #modal {
   background: #fff;
   width: 50%;
+  height: 85%;
   padding: 20px;
   border-radius: 4px;
   top: 40px;
@@ -256,12 +253,6 @@ p.windowtitle{
   transform: translate(0, -1000px);
 }
 
-.hidden img{
-  width: 30%;
-  height: auto;
-  text-align: center;
-  object-fit: cover; 
-}
 /*-------------------------------------------
 News
 -------------------------------------------*/
@@ -395,6 +386,7 @@ SP
   }
   #modal {
     width: 85%;
+    height: 85%;
   }
   /*-------------------------------------------
   News

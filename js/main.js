@@ -20,3 +20,15 @@
     close.click();
   });
 }
+
+// $(function(){
+// 	var scrollPosition;
+// 	$(".modal").on("click", function() {
+// 		scrollPosition = $(window).scrollTop();
+// 		$('body').addClass('fixed').css({'top': -scrollPosition});
+// 	});
+// 	$("#Close").on("click", function() {
+// 		$('body').removeClass('fixed').css({'top': 0});
+// 		window.scrollTo( 0 , scrollPosition );
+// 	});
+// });
