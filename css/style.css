@@ -6,10 +6,6 @@ html {
 }
 body {
   color: #24292e;
-  /* position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0; */
 }
 a {
   text-decoration: none;
@@ -206,15 +202,18 @@ p.windowtitle{
 /* モーダルウィンドウ */
 
 #close {
-  cursor: pointer;
-  width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
   text-align: center;
-  padding: 12px 0;
-  margin: 16px auto 0;
+  margin: 16px auto 0; 
+  width: 200px;
+  background-color: #24292e;
+  color: #fff;
+  padding: 15px 0;
+  border: solid 1px #24292e;
 }
-
+#close:hover {
+  background: #fff;
+  color: #24292e;
+}
 #mask {
   background: rgba(92, 92, 92, 0.4);
   position: fixed;
