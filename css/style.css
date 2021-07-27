@@ -198,6 +198,70 @@ p.windowtitle{
   margin-top: 20%;
   color: #24292e;
 }
+
+/* モーダルウィンドウ */
+/* #open {
+  cursor: pointer;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px 0;
+  margin: 16px auto 0;
+} */
+#close {
+  cursor: pointer;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px 0;
+  margin: 16px auto 0;
+}
+
+#mask {
+  background: rgba(92, 92, 92, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#modal {
+  background: #fff;
+  width: 50%;
+  padding: 20px;
+  border-radius: 4px;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+  z-index: 2;
+  position:fixed; /*モーダルウィンドウ絶対配置 */
+  overflow: auto;
+}
+
+#modal > p {
+  margin: 0 0 20px;
+}
+
+#mask.hidden {
+  display: none;
+}
+
+#modal.hidden {
+  transform: translate(0, -1000px);
+}
+
+.hidden img{
+  width: 30%;
+  height: auto;
+  text-align: center;
+  object-fit: cover; 
+}
 /*-------------------------------------------
 News
 -------------------------------------------*/
@@ -328,6 +392,9 @@ SP
     display: flex;
     justify-content: center;
     flex-wrap: wrap;   
+  }
+  #modal {
+    width: 85%;
   }
   /*-------------------------------------------
   News

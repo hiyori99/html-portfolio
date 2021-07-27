@@ -57,7 +57,7 @@
       </section>
 
       <section id="works" class="wrapper">
-        <h2 class="sec-title">Works</h2>
+        <h2 class="sec-title">Products</h2>
         <ul>
           <li>
             <div class="macup">
@@ -69,7 +69,7 @@
                       <div class="hide"></div>
                       <div class="full"></div>
                     </div>
-                    <p class="windowtitle">work1</p>
+                    <p class="windowtitle">product1</p>
                   </div>
                   <div class="mess">
                     <p>C#でRPGゲーム</p>
@@ -79,7 +79,15 @@
             </div>
           </li>
           <li>
-            <div class="macup">
+            <section id="modal" class="hidden">
+              <h2>Pythonでチャットボット</h2>
+              <p>OpenweatherからAPIを叩き、入力した都市の気象情報を返すチャットボットを製作しました。テレグラムというチャットアプリを利用しました。英語入力と日本語入力に対応させました。</p>
+              <!-- <img src="img/bot_demo.png" alt="チャットボットの画像"> -->
+              <div id="close">
+                閉じる
+              </div>
+            </section>
+            <div class="macup" id="open">
               <div class="window">
                 <div class="titlebar">
                   <div class="buttons">
@@ -87,13 +95,14 @@
                     <div class="hide"></div>
                     <div class="full"></div>
                   </div>
-                  <p class="windowtitle">work2</p>
+                  <p class="windowtitle">product2</p>
                 </div>
                 <div class="mess">
                   <p>Pythonでチャットボット</p>
                 </div>
               </div>
             </div>
+            <div id="mask" class="hidden"></div>
           </li>
           <li>
             <div class="macup">
@@ -104,7 +113,7 @@
                     <div class="hide"></div>
                     <div class="full"></div>
                   </div>
-                  <p class="windowtitle">work3</p>
+                  <p class="windowtitle">product3</p>
                 </div>
                 <div class="mess">
                   <p>Flaskで掲示板</p>
@@ -121,7 +130,7 @@
                     <div class="hide"></div>
                     <div class="full"></div>
                   </div>
-                  <p class="windowtitle">work4</p>
+                  <p class="windowtitle">product4</p>
                 </div>
                 <div class="mess">
                   <p>coming soon</p>
@@ -138,7 +147,7 @@
                     <div class="hide"></div>
                     <div class="full"></div>
                   </div>
-                  <p class="windowtitle">work5</p>
+                  <p class="windowtitle">product5</p>
                 </div>
                 <div class="mess">
                   <p>coming soon</p>
@@ -155,7 +164,7 @@
                     <div class="hide"></div>
                     <div class="full"></div>
                   </div>
-                  <p class="windowtitle">work6</p>
+                  <p class="windowtitle">product6</p>
                 </div>
                 <div class="mess">
                   <p>coming soon</p>
@@ -202,6 +211,7 @@
       <p>2021 Hiyorin Site</p>
     </footer>
 
+    <script src="js/main.js"></script>
   </body>
 
 </html>
