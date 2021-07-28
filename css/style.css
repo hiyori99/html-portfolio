@@ -200,21 +200,32 @@ p.windowtitle{
 }
 
 /* モーダルウィンドウ */
-
-#close {
+.code2 {
   text-align: center;
-  margin: 16px auto 0; 
+  margin: 16px auto; 
   width: 200px;
   background-color: #24292e;
   color: #fff;
   padding: 15px 0;
   border: solid 1px #24292e;
 }
-#close:hover {
+.code2 a {
+  color: #fff;
+}
+#close2, #close4{
+  text-align: center;
+  margin: 16px auto; 
+  width: 200px;
+  background-color: #24292e;
+  color: #fff;
+  padding: 15px 0;
+  border: solid 1px #24292e;
+}
+#close2:hover, #close4:hover, .code2:hover {
   background: #fff;
   color: #24292e;
 }
-#mask {
+#mask2, #mask4 {
   background: rgba(92, 92, 92, 0.4);
   position: fixed;
   top: 0;
@@ -224,11 +235,11 @@ p.windowtitle{
   z-index: 1;
 }
 
-#modal {
+#modal2 {
   background: #fff;
   width: 50%;
   height: 85%;
-  padding: 20px;
+  padding: 40px;
   border-radius: 4px;
   top: 40px;
   left: 0;
@@ -239,16 +250,40 @@ p.windowtitle{
   position:fixed; /*モーダルウィンドウ絶対配置 */
   overflow: auto;
 }
-
-#modal > p {
-  margin: 0 0 20px;
+#modal4 {
+  background: #fff;
+  width: 50%;
+  height: 50%;
+  padding: 40px;
+  border-radius: 4px;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+  z-index: 2;
+  position:fixed; /*モーダルウィンドウ絶対配置 */
+  overflow: auto;
+}
+#modal4 img {
+  width: 250px;
+  height: auto;
 }
 
-#mask.hidden {
+#modal2 > p {
+  margin: 0 0 20px;
+  padding: auto;
+}
+
+#modai2 > h2 {
+  margin-bottom: 30px;
+}
+
+#mask2.hidden, #mask4.hidden {
   display: none;
 }
 
-#modal.hidden {
+#modal2.hidden, #modal4.hidden {
   transform: translate(0, -1000px);
 }
 
@@ -383,9 +418,13 @@ SP
     justify-content: center;
     flex-wrap: wrap;   
   }
-  #modal {
+  #modal2 {
     width: 85%;
     height: 85%;
+  }
+  #modal4 {
+    width: 85%;
+    height: auto;
   }
   /*-------------------------------------------
   News
