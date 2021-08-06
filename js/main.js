@@ -40,6 +40,46 @@
     close.click();
   });
 }
+{
+  const open = document.getElementById('open5');
+  const close = document.getElementById('close5');
+  const modal = document.getElementById('modal5');
+  const mask = document.getElementById('mask5');
+
+  open.addEventListener('click', () => {
+    modal.classList.remove('hidden');
+    mask.classList.remove('hidden');
+  });
+
+  close.addEventListener('click', () => {
+    modal.classList.add('hidden');
+    mask.classList.add('hidden');
+  });
+
+  mask.addEventListener('click', () => {
+    close.click();
+  });
+}
+{
+  const open = document.getElementById('open6');
+  const close = document.getElementById('close6');
+  const modal = document.getElementById('modal6');
+  const mask = document.getElementById('mask6');
+
+  open.addEventListener('click', () => {
+    modal.classList.remove('hidden');
+    mask.classList.remove('hidden');
+  });
+
+  close.addEventListener('click', () => {
+    modal.classList.add('hidden');
+    mask.classList.add('hidden');
+  });
+
+  mask.addEventListener('click', () => {
+    close.click();
+  });
+}
 
 // $(function(){
 // 	var scrollPosition;

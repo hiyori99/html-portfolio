@@ -212,7 +212,7 @@ p.windowtitle{
 .code2 a {
   color: #fff;
 }
-#close2, #close4{
+#close2, #close4, #close5, #close6 {
   text-align: center;
   margin: 16px auto; 
   width: 200px;
@@ -221,11 +221,11 @@ p.windowtitle{
   padding: 15px 0;
   border: solid 1px #24292e;
 }
-#close2:hover, #close4:hover, .code2:hover {
+#close2:hover, #close4:hover, #close5:hover, #close6:hover, .code2:hover {
   background: #fff;
   color: #24292e;
 }
-#mask2, #mask4 {
+#mask2, #mask4, #mask5, #mask6 {
   background: rgba(92, 92, 92, 0.4);
   position: fixed;
   top: 0;
@@ -250,10 +250,10 @@ p.windowtitle{
   position:fixed; /*モーダルウィンドウ絶対配置 */
   overflow: auto;
 }
-#modal4 {
+#modal4, #modal5, #modal6 {
   background: #fff;
   width: 50%;
-  height: 50%;
+  height: auto;
   padding: 40px;
   border-radius: 4px;
   top: 40px;
@@ -265,7 +265,7 @@ p.windowtitle{
   position:fixed; /*モーダルウィンドウ絶対配置 */
   overflow: auto;
 }
-#modal4 img {
+#modal4 img, #modal5 img, #modal6 img {
   width: 250px;
   height: auto;
 }
@@ -279,11 +279,11 @@ p.windowtitle{
   margin-bottom: 30px;
 }
 
-#mask2.hidden, #mask4.hidden {
+#mask2.hidden, #mask4.hidden, #mask5.hidden, #mask6.hidden {
   display: none;
 }
 
-#modal2.hidden, #modal4.hidden {
+#modal2.hidden, #modal4.hidden, #modal5.hidden, #modal6.hidden {
   transform: translate(0, -1000px);
 }
 
@@ -422,7 +422,7 @@ SP
     width: 85%;
     height: 85%;
   }
-  #modal4 {
+  #modal4, #modal5, #modal6 {
     width: 85%;
     height: auto;
   }

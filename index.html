@@ -13,12 +13,12 @@
   <body>
     <header id="header">
       <h1 class="site-title">
-        <p>Hiyorin Site</p>
+        <p>Hiyorin Dev</p>
       </h1>
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
-          <li><a href="#works">Works</a></li>
+          <li><a href="#works">Products</a></li>
           <li><a href="#news">News</a></li>
           <li><a href="#contact">Contact</a></li>
           <!-- <li>
@@ -152,7 +152,13 @@
             <div id="mask4" class="hidden"></div>
           </li>
           <li>
-            <div class="macup">
+            <section id="modal5" class="hidden">
+              <img src="img/comingsoon.jpeg" alt="comingsoonの画像">
+              <div id="close5">
+                閉じる
+              </div>
+            </section>
+            <div class="macup" id="open5">
               <div class="window">
                 <div class="titlebar">
                   <div class="buttons">
@@ -167,9 +173,16 @@
                 </div>
               </div>
             </div>
+            <div id="mask5" class="hidden"></div>
           </li>
           <li>
-            <div class="macup">
+            <section id="modal6" class="hidden">
+              <img src="img/comingsoon.jpeg" alt="comingsoonの画像">
+              <div id="close6">
+                閉じる
+              </div>
+            </section>
+            <div class="macup" id="open6">
               <div class="window">
                 <div class="titlebar">
                   <div class="buttons">
@@ -184,6 +197,7 @@
                 </div>
               </div>
             </div>
+            <div id="mask6" class="hidden"></div>
           </li>
         </ul>
       </section>
@@ -206,7 +220,7 @@
 
       <section id="contact" class="wrapper">
         <h2 class="sec-title">Contact</h2>
-        <form action="#" method="post">
+        <form action="/contact" method="post">
           <dl>
             <dt><label for="name">NAME</label></dt>
             <dd><input type="text" id="name" name="your-name"></dd>
