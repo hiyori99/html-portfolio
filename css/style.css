@@ -144,6 +144,7 @@ Works
   border-radius: 5px;
   box-shadow: 0 0 10px 5px #e7e6e6;
   z-index: 0;
+  cursor: pointer;
   /* margin-bottom: 5%; */
   /* margin-right: 5%; */
 }
@@ -220,6 +221,7 @@ p.windowtitle{
   color: #fff;
   padding: 15px 0;
   border: solid 1px #24292e;
+  cursor: pointer;
 }
 #close2:hover, #close4:hover, #close5:hover, #close6:hover, .code2:hover {
   background: #fff;
