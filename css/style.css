@@ -201,19 +201,20 @@ p.windowtitle{
 }
 
 /* モーダルウィンドウ */
-.code2 {
+.rink1, .code2, .code3, .demo3 {
   text-align: center;
   margin: 16px auto; 
+  margin-bottom: 10%;
   width: 200px;
   background-color: #24292e;
   color: #fff;
   padding: 15px 0;
   border: solid 1px #24292e;
 }
-.code2 a {
+.rink1 a, .code2 a, .code3 a, .demo a {
   color: #fff;
 }
-#close2, #close4, #close5, #close6 {
+#close1, #close2, #close3, #close4, #close5, #close6 {
   text-align: center;
   margin: 16px auto; 
   width: 200px;
@@ -223,11 +224,11 @@ p.windowtitle{
   border: solid 1px #24292e;
   cursor: pointer;
 }
-#close2:hover, #close4:hover, #close5:hover, #close6:hover, .code2:hover {
+#close1:hover, #close2:hover, #close3:hover, #close4:hover, #close5:hover, #close6:hover, .rink1:hover, .code2:hover, .code3:hover, .demo3:hover {
   background: #fff;
   color: #24292e;
 }
-#mask2, #mask4, #mask5, #mask6 {
+#mask1, #mask2, #mask3, #mask4, #mask5, #mask6 {
   background: rgba(92, 92, 92, 0.4);
   position: fixed;
   top: 0;
@@ -237,7 +238,7 @@ p.windowtitle{
   z-index: 1;
 }
 
-#modal2 {
+#modal1, #modal2, #modal3 {
   background: #fff;
   width: 50%;
   height: 85%;
@@ -267,25 +268,26 @@ p.windowtitle{
   position:fixed; /*モーダルウィンドウ絶対配置 */
   overflow: auto;
 }
+
 #modal4 img, #modal5 img, #modal6 img {
   width: 250px;
   height: auto;
 }
 
-#modal2 > p {
-  margin: 0 0 20px;
+#modak1 > p, #modal2 > p, #modal3 > p {
+  margin: 20px 0 10px;
   padding: auto;
 }
 
-#modai2 > h2 {
+#modal1 > h2, #modal2 > h2, #modal3 > h2{
   margin-bottom: 30px;
 }
 
-#mask2.hidden, #mask4.hidden, #mask5.hidden, #mask6.hidden {
+#mask1.hidden, #mask2.hidden, #mask3.hidden, #mask4.hidden, #mask5.hidden, #mask6.hidden {
   display: none;
 }
 
-#modal2.hidden, #modal4.hidden, #modal5.hidden, #modal6.hidden {
+#modal1.hidden, #modal2.hidden, #modal3.hidden, #modal4.hidden, #modal5.hidden, #modal6.hidden {
   transform: translate(0, -1000px);
 }
 
@@ -429,7 +431,7 @@ SP
     justify-content: center;
     flex-wrap: wrap;   
   }
-  #modal2 {
+  #modal1, #modal2, #modal3 {
     width: 85%;
     height: 85%;
   }

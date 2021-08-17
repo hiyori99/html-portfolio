@@ -62,28 +62,43 @@
         <h2 class="sec-title">Products</h2>
         <ul>
           <li>
-            <div class="macup">
-              <a href="https://drive.google.com/file/d/1UV-_8g67-P6TaF_ysyjsWF0yKxOrNorR/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                <div class="window">
-                  <div class="titlebar">
-                    <div class="buttons">
-                      <div class="close"></div>
-                      <div class="hide"></div>
-                      <div class="full"></div>
-                    </div>
-                    <p class="windowtitle">product1</p>
-                  </div>
-                  <div class="mess">
-                    <p>C#でRPGゲーム</p>
-                  </div>
+            <section id="modal1" class="hidden">
+              <h2>C#でRPGゲーム</h2>
+              <p>ハッカソンに参加し、RPGゲームを製作しました。北海道というテーマで、初対面のメンバーを含む4人のチームで取り組みました。初めて使用するUnityとC#に苦戦しながらも、経験のあるメンバーに助けられながら、担当のミニゲームを完成させることができました。</p> 
+              <p>　　　</p>
+              <p>ハッカソン発表スライド（一部）</p>            
+              <img src="img/s1.png" alt="スライド1の画像">
+              <img src="img/s2.png" alt="スライド2の画像">
+              <img src="img/s3.png" alt="スライド3の画像">
+              <a href="https://drive.google.com/file/d/1UV-_8g67-P6TaF_ysyjsWF0yKxOrNorR/view?usp=sharing" target="_blank" rel="code1">
+                <div class="rink1">
+                  スライドを見る
                 </div>
               </a>
+              <div id="close1">
+                閉じる
+              </div>
+            </section>
+            <div class="macup" id="open1">
+              <div class="window">
+                <div class="titlebar">
+                  <div class="buttons">
+                    <div class="close"></div>
+                    <div class="hide"></div>
+                    <div class="full"></div>
+                  </div>
+                  <p class="windowtitle">product1</p>
+                </div>
+                <div class="mess">
+                  <p>C#でRPGゲーム</p>
+                </div>
+              </div>
             </div>
+            <div id="mask1" class="hidden"></div>
           </li>
           <li>
             <section id="modal2" class="hidden">
               <h2>Pythonでチャットボット</h2>
-              <p> </p>
               <p>テレグラムというチャットアプリを利用して、OpenweatherからAPIを叩き、入力した都市の気象情報を返すチャットボットを製作しました。また、英語入力と日本語入力に対応させました。</p>
               <a href="https://github.com/hiyori99/weatherchatbot/blob/main/Untitled.ipynb" target="_blank" rel="code2">
                 <div class="code2">
@@ -113,7 +128,38 @@
             <div id="mask2" class="hidden"></div>
           </li>
           <li>
-            <div class="macup">
+            <section id="modal3" class="hidden">
+              <h2>FlaskでWebアプリ</h2>
+              <p>Flaskを使用してユーザが株式を購入および売却できるウェブサイトを実装しました。IEXのデータを照会できるようにAPIキーを登録しました。このProductで初めてフレームワークに触れ、その便利さを実感するとともに、SQLの理解を深めることができました。</p>
+              <a href="https://github.com/hiyori99/Flask/tree/main/finance/application.py" target="_blank" rel="code3">
+                <div class="code3">
+                  コードを見る
+                </div>
+              </a>
+              <p class="login">ログイン画面</p>
+              <img src="img/login.png" alt="loginの画像">
+              <p>ユーザー登録画面</p>
+              <img src="img/register.png" alt="registerの画像">
+              <p>ホーム画面</p>
+              <img src="img/index.png" alt="indexの画像">
+              <p>株式の価格検索画面</p>
+              <img src="img/quote.png" alt="quoteの画像">
+              <p>株式の購入画面</p>
+              <img src="img/buy.png" alt="buyの画像">
+              <p>株式の売却画面</p>
+              <img src="img/sell.png" alt="sellの画像">
+              <p>売買履歴の画面</p>
+              <img src="img/history.png" alt="historyの画像">
+              <a href="https://drive.google.com/file/d/18SWRrTbKjnE9tJJwYSekvhVB1plEYbSL/view?usp=sharing" target="_blank" rel="demo3">
+                <div class="demo3">
+                  デモ動画を見る
+                </div>
+              </a>
+              <div id="close3">
+                閉じる
+              </div>
+            </section>
+            <div class="macup" id="open3">
               <div class="window">
                 <div class="titlebar">
                   <div class="buttons">
@@ -128,6 +174,7 @@
                 </div>
               </div>
             </div>
+            <div id="mask3" class="hidden"></div>
           </li>
           <li>
             <section id="modal4" class="hidden">
