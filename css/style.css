@@ -201,7 +201,7 @@ p.windowtitle{
 }
 
 /* モーダルウィンドウ */
-.rink1, .code2, .code3, .demo3 {
+.rink1, .code2, .code3, .demo3, .code4 {
   text-align: center;
   margin: 16px auto; 
   margin-bottom: 10%;
@@ -211,7 +211,7 @@ p.windowtitle{
   padding: 15px 0;
   border: solid 1px #24292e;
 }
-.rink1 a, .code2 a, .code3 a, .demo a {
+.rink1 a, .code2 a, .code3 a, .demo a, .code4 a {
   color: #fff;
 }
 #close1, #close2, #close3, #close4, #close5, #close6 {
@@ -224,12 +224,12 @@ p.windowtitle{
   border: solid 1px #24292e;
   cursor: pointer;
 }
-#close1:hover, #close2:hover, #close3:hover, #close4:hover, #close5:hover, #close6:hover, .rink1:hover, .code2:hover, .code3:hover, .demo3:hover {
+#close1:hover, #close2:hover, #close3:hover, #close4:hover, #close5:hover, #close6:hover, .rink1:hover, .code2:hover, .code3:hover, .demo3:hover, .code4:hover {
   background: #fff;
   color: #24292e;
 }
 #mask1, #mask2, #mask3, #mask4, #mask5, #mask6 {
-  background: rgba(92, 92, 92, 0.4);
+  background: rgba(82, 82, 82, 0.4);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -238,8 +238,8 @@ p.windowtitle{
   z-index: 1;
 }
 
-#modal1, #modal2, #modal3 {
-  background: #fff;
+#modal1, #modal2, #modal3, #modal4 {
+  background: rgb(255, 255, 255);
   width: 50%;
   height: 85%;
   padding: 40px;
@@ -253,7 +253,7 @@ p.windowtitle{
   position:fixed; /*モーダルウィンドウ絶対配置 */
   overflow: auto;
 }
-#modal4, #modal5, #modal6 {
+#modal5, #modal6 {
   background: #fff;
   width: 50%;
   height: auto;
@@ -269,17 +269,17 @@ p.windowtitle{
   overflow: auto;
 }
 
-#modal4 img, #modal5 img, #modal6 img {
+#modal5 img, #modal6 img {
   width: 250px;
   height: auto;
 }
 
-#modak1 > p, #modal2 > p, #modal3 > p {
+#modak1 > p, #modal2 > p, #modal3 > p, #modal4 > p {
   margin: 20px 0 10px;
   padding: auto;
 }
 
-#modal1 > h2, #modal2 > h2, #modal3 > h2{
+#modal1 > h2, #modal2 > h2, #modal3 > h2, #modal4 > h2 {
   margin-bottom: 30px;
 }
 
