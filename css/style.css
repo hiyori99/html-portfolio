@@ -431,11 +431,11 @@ SP
     justify-content: center;
     flex-wrap: wrap;   
   }
-  #modal1, #modal2, #modal3 {
+  #modal1, #modal2, #modal3, #modal4 {
     width: 85%;
     height: 85%;
   }
-  #modal4, #modal5, #modal6 {
+  #modal5, #modal6 {
     width: 85%;
     height: auto;
   }
